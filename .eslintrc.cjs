@@ -12,7 +12,10 @@ module.exports = {
     overrides: [],
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
+        sourceType: 'module',
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     parser: '@typescript-eslint/parser',
     plugins: [
@@ -23,6 +26,9 @@ module.exports = {
     ],
     root: true,
     rules: {
+        // React version 17 and beyond doesn't need to import React
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
         '@typescript-eslint/no-unused-vars': [
             'error',
             {
