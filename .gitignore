@@ -15,6 +15,9 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea
 .DS_Store
 *.suo
@@ -22,3 +25,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+tsconfig.tsbuildinfo
