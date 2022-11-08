@@ -10,7 +10,8 @@
     "check:lint": "eslint --cache \"./src/**/*.{js,jsx,ts,tsx}\"",
     "fix:lint": "eslint --cache \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
     "pretify": "prettier --config ./.prettierrc --write \"./src/**/*.{html,js,jsx,ts,tsx,json,css,md}\"",
-    "clean-dependencies": "rm -rf ./node_modules/ && npm install"
+    "clean-dependencies": "rm -rf ./node_modules/ && npm install",
+    "prepare": "husky install"
   },
   "sideEffects": false,
   "dependencies": {
@@ -30,6 +31,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.2",
     "prettier": "2.7.1",
     "typescript": "4.8.4",
     "vite": "^3.2.3"
