@@ -68,6 +68,64 @@ module.exports = {
           caseInsensitive: true
         }
       }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "variable",
+        types: ["boolean"],
+        format: ["PascalCase"],
+        prefix: [
+          "is",
+          "should",
+          "has",
+          "have",
+          "can",
+          "did",
+          "will",
+          "are",
+          "disabled",
+          "disable",
+          "enable",
+          "display",
+          "show",
+          "hide",
+          "open",
+          "fullWidth",
+          "fullScreen",
+          "loading",
+          "error",
+          "keepMounted",
+          "use",
+          "active",
+          "multiple"
+        ]
+      },
+      {
+        selector: "interface",
+        format: ["PascalCase"],
+        custom: {
+          regex: "^I[A-Z]",
+          match: false
+        }
+      },
+      {
+        selector: "typeAlias",
+        format: ["PascalCase"],
+        custom: {
+          regex: "^T[A-Z]",
+          match: false
+        }
+      },
+      {
+        selector: "typeParameter",
+        format: ["PascalCase"]
+      },
+      {
+        selector: "enum",
+        format: ["PascalCase"],
+        suffix: ["Enum"]
+      }
     ]
   }
 };
