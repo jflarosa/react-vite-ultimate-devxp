@@ -12,6 +12,7 @@
     "pretify": "prettier --config ./.prettierrc --write \"./{src}/**/*.{html,js,jsx,ts,tsx,json,css,md}\"",
     "clean-dependencies": "rm -rf ./node_modules/ && npm install"
   },
+  "sideEffects": false,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
