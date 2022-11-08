@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check:lint": "eslint --cache \"./{src}/**/*.{js,jsx,ts,tsx}\"",
     "fix:lint": "eslint --cache \"./{src}/**/*.{js,jsx,ts,tsx}\" --fix",
-    "pretify": "prettier --config ./.prettierrc --write \"./{src}/**/*.{html,js,jsx,ts,tsx,json,css,md}\""
+    "pretify": "prettier --config ./.prettierrc --write \"./{src}/**/*.{html,js,jsx,ts,tsx,json,css,md}\"",
+    "clean-dependencies": "rm -rf ./node_modules/ && npm install"
   },
   "dependencies": {
     "react": "^18.2.0",
