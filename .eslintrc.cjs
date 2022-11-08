@@ -12,6 +12,13 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "prettier"
   ],
+  "settings": {
+    "react": {
+      "pragma": "React",  // Pragma to use, default to "React"
+      "fragment": "Fragment",  // Fragment to use (may be a property of <pragma>), default to "Fragment"
+      "version": "detect" // React version. "detect" automatically picks the version you have installed.
+    }
+  },
   overrides: [],
   ignorePatterns: ["*.html"],
   parserOptions: {
