@@ -13,9 +13,11 @@ module.exports = {
     "prettier"
   ],
   overrides: [],
+  ignorePatterns: ["*.html"],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
+    project: `${__dirname}/tsconfig.json`,
     "ecmaFeatures": {
       "jsx": true
     }
