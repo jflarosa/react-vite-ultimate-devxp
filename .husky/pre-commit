@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run check:typescript
+git-precommit-checks && npm run check:typescript && lint-staged

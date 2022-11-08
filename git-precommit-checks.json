@@ -1,0 +1,19 @@
+{
+  "rules": [
+    {
+      "message": "Il y a des marqueurs de conflits dans le code !",
+      "regex": "/^[<>|=]{4,}/m"
+    },
+    {
+      "message": "Il faut penser à traiter les TODO !",
+      "nonBlocking": "true",
+      "regex": "(?:FIXME|TODO)"
+    }
+  ],
+  "display": {
+    "notifications": true,
+    "offendingContent": true,
+    "shortStats": true,
+    "verbose": false
+  }
+}
