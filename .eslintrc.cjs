@@ -49,6 +49,7 @@ module.exports = {
                 ]
             }
         ],
+        'import/prefer-default-export': 'off',
         // React version 17 and beyond doesn't need to import React
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
