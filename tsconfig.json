@@ -27,6 +27,15 @@
       ],
       "@ui": [
         "src/ui/index.ts"
+      ],
+      "@features": [
+        "src/features/index.ts"
+      ],
+      "@data": [
+        "src/data/index.ts"
+      ],
+      "@router": [
+        "src/router/index.ts"
       ]
     }
   },
